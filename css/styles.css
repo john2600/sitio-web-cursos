@@ -1,0 +1,391 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color : #8318C7;
+    --secondary-color : #ffc05a;
+    --light-color: #f9fafb;
+    --dark-color: #272d30;
+}
+
+html, 
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.container-sm {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+/** Navegacion **/
+.navbar {
+    background: rgb(136, 87, 248);
+    color : white;
+    padding: 1rem 2rem;
+    position: fixed;
+    top : 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar img {
+    width: 81px;
+    height: 32px;
+}
+
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .main-menu-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 500;
+}
+
+.navbar i{
+    font-size: 0.3rem;
+}
+
+.navbar a{
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.m_header {
+    background: #000 url('../images/banner_1.png') center center/cover no-repeat;
+    padding: 11.5rem 2rem 8rem;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.m_header_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    padding-bottom: 8rem;
+}
+
+.m_header h1{
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.m_header p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.m_header img {
+    width: 100%;
+    margin-right: -100px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 32px;
+    background: var(--secondary-color);
+    color : var(--dark-color);
+    cursor: pointer;
+    transition: all 0.2sg;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: #fff;
+}
+
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    padding-bottom: 8rem;
+}
+
+/* promo */
+.container-price {
+    max-width:  1100px;
+    background-color: #f8fafe;
+    border-radius: 10px;
+    margin : 0 auto;
+    margin-top : 10px;
+    padding: 70px 60px;
+}
+
+.pricing {
+    display: flex;
+    justify-content:  space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    background-color:  #fff;
+    border-radius: 8px;
+    margin-bottom:  20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 15px;
+    color: #333;
+    background: #f8fafe;
+}
+
+.card-pro h2 {
+    background:  linear-gradient(
+        90deg,
+        rgba(194, 227, 255, 1) 13%,
+        rgba(180, 118, 254, 1) 100%
+    );
+    color: #fff;
+}
+
+.card-enterprise h2 {
+    background:  linear-gradient(
+        90deg,
+        rgba(255, 177, 194, 1) 13%,
+        rgba(255, 203, 114, 1) 100%
+    );
+    color: #fff;
+}
+
+.card .price {
+    font-size: 45px;
+    font-weight: 700px;
+    margin-bottom: 20px;
+}
+
+.card .price span {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.card .price sup {
+    font-size: 18px;
+    position:  relative;
+    left: -5px;
+}
+
+.card .main-text {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.btn_promo {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    background-color: #fff;
+    color: #27264b;
+    border: 1px solid #27264b;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary,
+.btn_promo:hover {
+    background-color: #27264b;
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: #272;
+}
+
+.plan-title {
+    text-align: center;
+    margin: 10 auto;
+    padding: 0 2rem;
+}
+
+.card ul {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.card ul li{
+    color : #003807;
+    margin-right: 10px;
+}
+
+/* Learn */
+.topics {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.topic img{
+    transition: transform 0.3s;
+}
+
+.topic img:hover {
+    transform: scale(1.1);
+}
+
+.topic h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+/* section header */
+.section-header {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    font-size : 1.3rem;
+    color: var(--dark-color);
+}
+
+.footer {
+    background: var(--dark-color);
+    color: #fff;
+    border-top: 1px solid #384653;
+    padding: 0.5rem 2rem;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a{
+    color: #fff;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/* social */
+.social {
+    background: var(--dark-color);
+    color: #fff;
+    padding: 7rem 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+.inner-header {
+    background-color: #fff;
+    color: #040404;
+    height : 250px;
+    padding-top: 8rem;
+}
+
+.inner-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+
+}
+
+.contact-form p{
+    margin-bottom: 3rem;
+}
+
+.contact-form input, .contact-form textarea{
+    display: block;
+    font-family: inherit;
+    font-size: medium;
+    width: 100%;
+    margin: 1.5 rem 0;
+    border: 1px solid #ccc;
+    padding: 1.2rem 1rem;
+}
+
+.contact-form textarea{
+    height: 200px;
+}
+
+.contact-form .btn {
+    display: block;
+    width: 50%;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 50px auto 25px auto;
+}
